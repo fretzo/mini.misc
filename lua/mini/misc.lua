@@ -183,8 +183,7 @@ end
 ---@param fallback function|nil Forwarded to |MiniMisc.find_root()|.
 ---
 ---@usage >
----   require('mini.misc').setup()
----   MiniMisc.setup_auto_root()
+---   require('mini.misc').setup_auto_root()
 MiniMisc.setup_auto_root = function(names, fallback)
   if vim.fs == nil then
     vim.notify('(mini.misc) `setup_auto_root()` requires `vim.fs` module (present in Neovim>=0.8).')
